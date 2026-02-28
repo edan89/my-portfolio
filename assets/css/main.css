@@ -5600,7 +5600,7 @@ figcaption {
         display: flex;
     }
     .cta_graphic-wrap {
-        aspect-ratio: 2.39;
+        aspect-ratio: 1;
     }
     .cta_content {
         padding: var(--fixed--3rem);
