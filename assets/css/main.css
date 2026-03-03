@@ -224,28 +224,28 @@ th {
 }
 
 .w-icon-slider-right:before {
-    content: "";
+    content: "î˜€";
 }
 
 .w-icon-slider-left:before {
-    content: "";
+    content: "î˜";
 }
 
 .w-icon-nav-menu:before {
-    content: "";
+    content: "î˜‚";
 }
 
 .w-icon-arrow-down:before,
 .w-icon-dropdown-toggle:before {
-    content: "";
+    content: "î˜ƒ";
 }
 
 .w-icon-file-upload-remove:before {
-    content: "";
+    content: "î¤€";
 }
 
 .w-icon-file-upload-icon:before {
-    content: "";
+    content: "î¤ƒ";
 }
 
 * {
@@ -6398,7 +6398,7 @@ figcaption {
         height: 60vh;
     }
     .home-header_labels-wrap {
-        bottom: 1.25rem;
+        bottom: 0.25rem;
     }
     .home-about_img-text {
         white-space: normal;
@@ -6662,3 +6662,83 @@ figcaption {
      line-height: 1.6;
      font-weight: 300;
 }
+
+/* Language Toggle Styles */
+.lang-toggle-wrap {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.lang-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #94a3b8;
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.lang-toggle-btn:hover {
+    color: #f8fafc;
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(30, 40, 60, 0.8);
+    transform: translateY(-1px);
+}
+
+.lang-toggle-btn.active {
+    color: #60efff;
+    font-weight: 700;
+    border-color: rgba(96, 239, 255, 0.4);
+    background: rgba(96, 239, 255, 0.08);
+    box-shadow: 0 0 12px rgba(96, 239, 255, 0.15), inset 0 0 8px rgba(96, 239, 255, 0.05);
+}
+
+.lang-flag-img {
+    border-radius: 2px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Adjustments for Language Toggle */
+@media screen and (max-width: 991px) {
+    .navbar_links-wrap {
+        flex-direction: column;
+        gap: 1.5rem !important;
+        padding: 1.5rem 0;
+    }
+    
+    .lang-toggle-wrap {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 0.75rem;
+        width: 100%;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+
+    .lang-toggle-btn {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+        gap: 4px;
+    }
+
+    .lang-flag-img {
+        width: 16px;
+        height: 11px;
+    }
+}
+
